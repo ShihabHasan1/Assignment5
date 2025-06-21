@@ -2,10 +2,51 @@ document.getElementById('donate-btn')
     .addEventListener('click', function(event){
         event.preventDefault();
         const donateAmount = getInputValuedByID('input-value');
+        if(isNaN(donateAmount)){
+            alert('This is wrong Amount');
+            return;
+        }
         const currentBalance = getInputTextValueById('current-balance');
         const newBalance = donateAmount + currentBalance;
-        document.getElementById('current-balance').innerText = newBalance;
+        document.getElementById('current-balance').innerText = newBalance+' ' +'BDT';
         const setBalance = getInputTextValueById('set-balance');
         const newSetBalance = setBalance - donateAmount;
-        document.getElementById('set-balance').innerText = newSetBalance;
+        document.getElementById('set-balance').innerText = newSetBalance+' ' +'BDT';
+        showDonationAlert();
+    })
+
+document.getElementById('donate-btn1')
+    .addEventListener('click', function(event){
+        event.preventDefault();
+        const donateAmount = getInputValuedByID('input-value1');
+        console.log(typeof donateAmount)
+        if(isNaN(donateAmount)){
+            alert('This is wrong Amount');
+            return;
+        }
+        const currentBalance = getInputTextValueById('current-balance');
+        const newBalance = donateAmount + currentBalance;
+        document.getElementById('current-balance1').innerText = newBalance+' ' +'BDT';
+        const setBalance = getInputTextValueById('set-balance');
+        const newSetBalance = setBalance - donateAmount;
+        document.getElementById('set-balance').innerText = newSetBalance+' ' +'BDT';
+        showDonationAlert();
+    })
+
+document.getElementById('donate-btn2')
+    .addEventListener('click', function(event){
+        event.preventDefault();
+        const donateAmount = getInputValuedByID('input-value2');
+        console.log(typeof donateAmount)
+        if(isNaN(donateAmount)){
+            alert('This is wrong Amount');
+            return;
+        }
+        const currentBalance = getInputTextValueById('current-balance');
+        const newBalance = donateAmount + currentBalance;
+        document.getElementById('current-balance2').innerText = newBalance+' ' +'BDT';
+        const setBalance = getInputTextValueById('set-balance');
+        const newSetBalance = setBalance - donateAmount;
+        document.getElementById('set-balance').innerText = newSetBalance+ ' ' +'BDT';
+        showDonationAlert();
     })

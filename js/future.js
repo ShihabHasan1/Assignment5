@@ -1,6 +1,7 @@
 function getInputValuedByID(id){
     const inputValue = document.getElementById(id).value;
     const donateAmount = parseFloat(inputValue);
+    console.log(typeof donateAmount)
     return donateAmount;
 }
 

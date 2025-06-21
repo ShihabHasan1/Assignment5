@@ -6,6 +6,8 @@
     <title>Donate Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <main>
@@ -80,17 +82,17 @@
                     <img src="assets/coin.png" alt="">
                     <div class="stats shadow">
                         <div class="stat flex">
-                            <div class="stat-value">5,500 BDT</div>
+                            <div id="current-balance1" class="stat-value">5500 BDT</div>
                         </div>
                         </div>
                 </div>
                 <div>
                 <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="w-64"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                <input type="text" placeholder="Write Donate Amount" class="input" />
+                <input id="input-value1" type="text" placeholder="Write Donate Amount" class="input" />
                 </div>
                 <div class="card-actions ">
-                <button class="btn btn-primary">Donate Now</button>
+                <button id="donate-btn1" class="btn btn-primary">Donate Now</button>
                 </div>
             </div>
          </div>
@@ -108,17 +110,17 @@
                     <img src="assets/coin.png" alt="">
                     <div class="stats shadow">
                         <div class="stat flex">
-                            <div class="stat-value">5,500 BDT</div>
+                            <div id="current-balance2" class="stat-value">5500 BDT</div>
                         </div>
                         </div>
                 </div>
                 <div>
                 <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                 <p class="w-64"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                <input type="text" placeholder="Write Donate Amount" class="input" />
+                <input id="input-value2" type="text" placeholder="Write Donate Amount" class="input" />
                 </div>
                 <div class="card-actions ">
-                <button class="btn btn-primary">Donate Now</button>
+                <button id="donate-btn2" class="btn btn-primary">Donate Now</button>
                 </div>
             </div>
          </div>
@@ -127,5 +129,25 @@
     
     <script src="js/donate.js"></script>
     <script src="js/future.js"></script>
+
+    <script>
+ function showDonationAlert() {
+      Swal.fire({
+        title: '<strong>Congrats!</strong>',
+        html: `
+          <img src="assets/coin.png" alt="Coin" width="50" style="margin: 0 auto;">
+          <p>You Have Donated for Humankind</p>
+          <p><strong>Successfully</strong></p>
+        `,
+        showConfirmButton: true,
+        confirmButtonText: 'close confirmation',
+        customClass: {
+          popup: 'rounded-lg',
+          title: 'text-2xl',
+          confirmButton: 'px-4 py-2 text-base'
+        }
+      });
+    }
+</script>
 </body>
 </html>
