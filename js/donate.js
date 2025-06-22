@@ -13,6 +13,18 @@ document.getElementById('donate-btn')
         const newSetBalance = setBalance - donateAmount;
         document.getElementById('set-balance').innerText = newSetBalance+' ' +'BDT';
         showDonationAlert();
+        document.getElementById('history');
+            const div = document.createElement('div');
+            div.classList.add('bg-yellow-300');
+            div.innerHTML = `
+                <h4 class = "text-2xl font-bold">Donate Money</h4>
+                <p> ${donateAmount} TK. is Donated for famine-2024 at Feni, Bangladesh;
+                const now = new Date();
+                console.log(now.toString());
+                                            
+            `
+            document.getElementById('history-section').appendChild(div);
+        
     })
 
 document.getElementById('donate-btn1')
@@ -49,4 +61,10 @@ document.getElementById('donate-btn2')
         const newSetBalance = setBalance - donateAmount;
         document.getElementById('set-balance').innerText = newSetBalance+ ' ' +'BDT';
         showDonationAlert();
+    })
+
+
+document.getElementById('history')
+    .addEventListener('click', function(){
+        showSection('history-section')
     })

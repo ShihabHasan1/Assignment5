@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <main>
+    <main id="all-section">
         <!-- nav bar start -->
             <div class="navbar bg-base-100 shadow-sm">
                 <div class="navbar-start">
@@ -18,7 +18,7 @@
                   
                    
                     </div>
-                    <button class="btn btn-warning">Blog</button>
+                    <button onclick="location.href='blog.html'" class="btn btn-warning">Blog</button>
                 </div>
                 <div class="navbar-center lg:flex gap-3">
                    <img src="assets/logo.png" alt="">
@@ -37,13 +37,13 @@
 
         <!-- Action Button Section Start -->
          <div class="flex justify-center gap-3 mt-20">
-            <button class="btn btn-warning">Donate</button>
-            <button class="btn btn-warning">History</button>
+            <button id="donate"  class="btn btn-warning">Donate</button>
+            <button id="history" class="btn btn-warning">History</button>
          </div>
         <!-- Action Button Section End -->
 
         <!-- Card Section Start 1 -->
-         <div class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
+         <div id="Section-1" class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
             
             <figure>
                 <img src="assets/noakhali.png" alt="">
@@ -71,7 +71,7 @@
         <!-- Card Section End -->
 
          <!-- Card Section Start 2 -->
-         <div class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
+         <div id="Section-2" class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
             
             <figure>
                 <img src="assets/feni.png" alt="">
@@ -99,7 +99,7 @@
         <!-- Card Section End -->
 
          <!-- Card Section Start 3 -->
-         <div class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
+         <div id="Section-3" class="card card-side bg-base-100 shadow-sm mt-20 mb-20">
             
             <figure>
                 <img src="assets/quota-protest.png" alt="">
@@ -125,6 +125,13 @@
             </div>
          </div>
         <!-- Card Section End -->
+
+        <!-- history section s -->
+         <div id="history-section" class="hidden">
+            <h1>history</h1>
+         </div>
+        <!-- history section e-->
+
     </main>
     
     <script src="js/donate.js"></script>

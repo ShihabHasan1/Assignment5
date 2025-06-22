@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main>
+        <!-- nav bar start -->
+         <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                  
+                   
+                    </div>
+                    <button onclick="location.href='index.html'" class="btn btn-warning">Home</button>
+                </div>
+                <div class="navbar-center lg:flex gap-3">
+                   <img src="assets/logo.png" alt="">
+                   <h3 style="font-weight: 800; font-size: medium;">Donate Bangladesh</h3>
+                </div>
+                <div class="navbar-end">
+                    <img src="assets/coin.png" alt="">
+                    <div class="stats shadow">
+                        <div class="stat flex">
+                            <div id="set-balance" class="stat-value">5500 BDT</div>
+                        </div>
+                        </div>
+                </div>
+                </div>
+        <!-- nav bar end -->
+         <!-- FAQ Section Start -->
+                <div class="mt-10">
+                    <h1 style="font-size: 40px; font-weight: 800;">Important FAQ ?</h1>
+                </div>
+                <div class="join join-vertical bg-base-100">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title font-semibold">What is the Document Object Model(DOM)?</div>
+                    <div class="collapse-content text-sm">The DOM is a tree-like structure that represents everything on a web page all the elements, text, attributes, etc.</div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title font-semibold">How do you select an element from the DOM?</div>
+                    <div class="collapse-content text-sm">The DOM lets JavaScript select, read, and modify webpage elements using methods like getElementById, querySelector, and more.</div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title font-semibold">What is the event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content text-sm"> Event delegation is a technique where instead of attaching event listeners to multiple child elements, you attach a single listener to a parent element.
+                    The parent listens for events bubbling up from its children, and handles them based on conditions.</div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title font-semibold">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content text-sm">Use DOM methods to get, set, or remove attributes, and modify styles directly or by adding/removing CSS classes.</div>
+                </div>
+                </div>
+         <!-- FAQ Section End -->
+    </main>
+</body>
+</html>

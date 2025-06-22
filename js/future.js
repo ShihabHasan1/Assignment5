@@ -11,3 +11,12 @@ function getInputTextValueById(id){
     const currentBalance = parseFloat(currentAmount);
     return currentBalance;
 }
+
+function showSection(id){
+    document.getElementById('section1').classList.add('hidden');
+    document.getElementById('section2').classList.add('hidden');
+    document.getElementById('section3').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
